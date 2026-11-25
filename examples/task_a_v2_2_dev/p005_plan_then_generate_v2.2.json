@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "passage_id": "p005",
+  "generation_method": "plan_then_generate",
+  "title": "The Nature Club Discovery",
+  "language": "en",
+  "target_words": [
+    "join",
+    "club",
+    "nature",
+    "discover",
+    "collect"
+  ],
+  "characters": [
+    {
+      "id": "c1",
+      "name": "Lily"
+    },
+    {
+      "id": "c2",
+      "name": "Tom"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "location": "School hallway",
+      "dialogue": [
+        {
+          "line_id": "line_1",
+          "speaker_id": "c1",
+          "text": "Tom, I want to join a club, but I don't know which one.",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": [
+            "s003",
+            "s009"
+          ]
+        },
+        {
+          "line_id": "line_2",
+          "speaker_id": "c2",
+          "text": "Look at these ads. The cooking club meets on Wednesdays. We can learn to cook Chinese food.",
+          "emotion": "neutral",
+          "action": "point",
+          "source_sentence_ids": [
+            "s004",
+            "s007"
+          ]
+        },
+        {
+          "line_id": "line_3",
+          "speaker_id": "c1",
+          "text": "That sounds fun, but I love nature. Is there a club for that?",
+          "emotion": "happy",
+          "action": "none",
+          "source_sentence_ids": [
+            "s014"
+          ]
+        },
+        {
+          "line_id": "line_4",
+          "speaker_id": "c2",
+          "text": "Yes! The nature club goes hiking every Sunday afternoon. They watch birds and collect plants and insects.",
+          "emotion": "excited",
+          "action": "point",
+          "source_sentence_ids": [
+            "s016",
+            "s017"
+          ]
+        },
+        {
+          "line_id": "line_5",
+          "speaker_id": "c1",
+          "text": "I want to discover wildlife! Let's try the nature club first.",
+          "emotion": "excited",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s019"
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "location": "Nature park",
+      "dialogue": [
+        {
+          "line_id": "line_6",
+          "speaker_id": "c1",
+          "text": "I'm not sure what to look for. Maybe we won't find anything.",
+          "emotion": "sad",
+          "action": "walk",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_7",
+          "speaker_id": "c2",
+          "text": "Let's slow down and look closely. We can collect some leaves and small things.",
+          "emotion": "neutral",
+          "action": "walk",
+          "source_sentence_ids": [
+            "s017"
+          ]
+        },
+        {
+          "line_id": "line_8",
+          "speaker_id": "c1",
+          "text": "Oh! I see a small bird near the ground. I almost missed it!",
+          "emotion": "surprised",
+          "action": "point",
+          "source_sentence_ids": [
+            "s019"
+          ]
+        },
+        {
+          "line_id": "line_9",
+          "speaker_id": "c2",
+          "text": "You discovered wildlife right under your nose!",
+          "emotion": "happy",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s019"
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "location": "School hallway",
+      "dialogue": [
+        {
+          "line_id": "line_10",
+          "speaker_id": "c1",
+          "text": "That was great. The club also visits nature parks. There's so much to explore!",
+          "emotion": "happy",
+          "action": "none",
+          "source_sentence_ids": [
+            "s018"
+          ]
+        },
+        {
+          "line_id": "line_11",
+          "speaker_id": "c2",
+          "text": "So, will you join the nature club?",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": [
+            "s003"
+          ]
+        },
+        {
+          "line_id": "line_12",
+          "speaker_id": "c1",
+          "text": "Yes! I'll join now. And maybe I can try the book club later too.",
+          "emotion": "excited",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s009",
+            "s011"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "passage_id": "p003",
+  "generation_method": "plan_then_generate",
+  "title": "Peter's New School",
+  "language": "en",
+  "target_words": [
+    "building",
+    "field",
+    "flag",
+    "raise",
+    "change"
+  ],
+  "characters": [
+    {
+      "id": "c1",
+      "name": "Peter"
+    },
+    {
+      "id": "c2",
+      "name": "Li Wei"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "location": "On the school sports field",
+      "dialogue": [
+        {
+          "line_id": "line_1",
+          "speaker_id": "c2",
+          "text": "Peter, you said your new school is great. What is it like?",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": [
+            "s002"
+          ]
+        },
+        {
+          "line_id": "line_2",
+          "speaker_id": "c1",
+          "text": "It's very beautiful. There are many modern buildings.",
+          "emotion": "happy",
+          "action": "point",
+          "source_sentence_ids": [
+            "s003",
+            "s004"
+          ]
+        },
+        {
+          "line_id": "line_3",
+          "speaker_id": "c1",
+          "text": "Look, there's a large sports field next to the teachers' building.",
+          "emotion": "excited",
+          "action": "point",
+          "source_sentence_ids": [
+            "s005"
+          ]
+        },
+        {
+          "line_id": "line_4",
+          "speaker_id": "c2",
+          "text": "What do you do on the field?",
+          "emotion": "curious",
+          "action": "none",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_5",
+          "speaker_id": "c1",
+          "text": "All the students go there and do exercises together in the morning. It's amazing!",
+          "emotion": "excited",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s006",
+            "s007"
+          ]
+        },
+        {
+          "line_id": "line_6",
+          "speaker_id": "c2",
+          "text": "Is the field only for exercises?",
+          "emotion": "curious",
+          "action": "none",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_7",
+          "speaker_id": "c1",
+          "text": "No. Every Monday we raise the flag there. It's a special way to start the week.",
+          "emotion": "happy",
+          "action": "point",
+          "source_sentence_ids": [
+            "s008",
+            "s009"
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "location": "In the classroom",
+      "dialogue": [
+        {
+          "line_id": "line_8",
+          "speaker_id": "c2",
+          "text": "Where is your classroom?",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_9",
+          "speaker_id": "c1",
+          "text": "The classroom building is behind the sports field. We spend most of the time there. It's big and clean.",
+          "emotion": "happy",
+          "action": "point",
+          "source_sentence_ids": [
+            "s010",
+            "s011",
+            "s012"
+          ]
+        },
+        {
+          "line_id": "line_10",
+          "speaker_id": "c2",
+          "text": "Do you always sit in the same seat?",
+          "emotion": "curious",
+          "action": "none",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_11",
+          "speaker_id": "c1",
+          "text": "No, every week we change seats. This week I sit next to my best friend, Han Lin.",
+          "emotion": "happy",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s013",
+            "s014"
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "location": "Outside the dining hall",
+      "dialogue": [
+        {
+          "line_id": "line_12",
+          "speaker_id": "c2",
+          "text": "What's your favourite place?",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_13",
+          "speaker_id": "c1",
+          "text": "The dining hall. It's across from the sports field. It's my favourite place because there are many kinds of food.",
+          "emotion": "excited",
+          "action": "point",
+          "source_sentence_ids": [
+            "s015",
+            "s016"
+          ]
+        },
+        {
+          "line_id": "line_14",
+          "speaker_id": "c1",
+          "text": "I love the Chinese food there. They make delicious jiaozi.",
+          "emotion": "happy",
+          "action": "none",
+          "source_sentence_ids": [
+            "s017",
+            "s018"
+          ]
+        },
+        {
+          "line_id": "line_15",
+          "speaker_id": "c1",
+          "text": "How about your school?",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": [
+            "s019"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://c11.local/schemas/script.schema.json",
+  "title": "C11 English Skit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "passage_id",
+    "generation_method",
+    "title",
+    "language",
+    "target_words",
+    "characters",
+    "scenes"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "passage_id": {
+      "type": "string",
+      "pattern": "^p[0-9]{3}$"
+    },
+    "generation_method": {
+      "type": "string",
+      "enum": ["direct", "plan_then_generate"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "type": "string",
+      "const": "en"
+    },
+    "target_words": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z]+$"
+      }
+    },
+    "characters": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/character"
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/scene"
+      }
+    }
+  },
+  "$defs": {
+    "character": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^c[0-9]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scene_id", "location", "dialogue"],
+      "properties": {
+        "scene_id": {
+          "type": "string",
+          "pattern": "^scene_[0-9]+$"
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dialogue": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/dialogue_line"
+          }
+        }
+      }
+    },
+    "dialogue_line": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "line_id",
+        "speaker_id",
+        "text",
+        "emotion",
+        "action",
+        "source_sentence_ids"
+      ],
+      "properties": {
+        "line_id": {
+          "type": "string",
+          "pattern": "^line_[0-9]+$"
+        },
+        "speaker_id": {
+          "type": "string",
+          "pattern": "^c[0-9]+$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": ".*\\S.*"
+        },
+        "emotion": {
+          "type": "string",
+          "enum": ["neutral", "happy", "sad", "curious", "surprised", "excited"]
+        },
+        "action": {
+          "type": "string",
+          "enum": ["none", "nod", "point", "wave", "look_at", "walk"]
+        },
+        "source_sentence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^s[0-9]{3}$"
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

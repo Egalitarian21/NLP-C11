@@ -1,0 +1,26 @@
+{
+  "manifest_version": "1.0",
+  "status": "mock_not_generated",
+  "passage_id": "p005",
+  "generation_method": "direct",
+  "run_id": "mock_run_001",
+  "script_path": "examples/mock_script.json",
+  "audio_files": [],
+  "line_segments": [
+    {
+      "line_id": "line_001",
+      "audio_path": "audio/p005/direct/mock_run_001/line_001.wav",
+      "duration_sec": null,
+      "start_sec": null,
+      "end_sec": null
+    },
+    {
+      "line_id": "line_002",
+      "audio_path": "audio/p005/direct/mock_run_001/line_002.wav",
+      "duration_sec": null,
+      "start_sec": null,
+      "end_sec": null
+    }
+  ],
+  "note": "Mock manifest only. duration_sec is measured per audio file; start_sec/end_sec are final video-timeline positions. No audio has been generated in Task A Phase 1."
+}

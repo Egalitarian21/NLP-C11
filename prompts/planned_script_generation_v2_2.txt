@@ -1,0 +1,9 @@
+PLANNED SCRIPT GENERATION v2.2 - planned-script-generation-v2.2
+
+Generate the final English skit using the authoritative source passage, the exact five frozen target words, the shared v2.2 story-driven writing requirements, and the validated v2.2 source-grounded story plan.
+
+The plan is an explicit planning aid, not a replacement for the original source. Make the plan's main character goal visible, enact its key obstacle and action, show the planned discovery or change, and make the ending follow from the earlier events. Simplify only when necessary while preserving the core causal relationship.
+
+Every target word must appear naturally in dialogue. Keep factual or paraphrased lines traceable to the most specific relevant source sentence IDs and use an empty source_sentence_ids array only for genuinely creative transitions or fictional events. Do not turn creative events into claimed textbook facts.
+
+Return only one complete JSON object compatible with the existing script schema. Set generation_method to "plan_then_generate". Do not return the plan, an outline, a critique, a ranking, or explanatory prose. Do not use a Direct script, mock script, human rating, or previous output.

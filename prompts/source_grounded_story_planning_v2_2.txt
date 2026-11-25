@@ -1,0 +1,7 @@
+SOURCE-GROUNDED STORY PLANNING v2.2 - source-grounded-story-planning-v2.2
+
+Create a reusable source-grounded plan for the supplied textbook passage. Return only the planning JSON object described by the v2.2 planning schema.
+
+The plan must contain exactly five vocabulary-grounding entries, source-backed claims, and exactly four connected causal story beats. For the four beats, state: the initial character goal; the event or small obstacle that affects it; the character action; the concrete discovery or change that moves the story forward; and why the outcome follows. Keep these as planning notes, not final dialogue.
+
+Ground vocabulary entries and source claims in supplied sentence IDs. Distinguish source facts from questions, invitations, opinions/promises, and creative transitions when relevant. Do not create a separate full-passage fact summary or source_facts_to_preserve list. Do not write final dialogue lines. Do not add a script, critique, ranking, or self-evaluation. Do not hard-code any passage-specific club, animal, plant, or other story element.

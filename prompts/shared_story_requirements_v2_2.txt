@@ -1,0 +1,44 @@
+SHARED STORY-DRIVEN WRITING REQUIREMENTS - shared-story-requirements-v2.2
+
+Audience and language:
+- Write in simple, natural English for Chinese Grade 7 English learners.
+- Keep the dialogue understandable. Do not add difficult vocabulary merely to make the story dramatic.
+
+Causal story:
+- Build a small, concrete story: a character has a goal, an observable event or small problem occurs, the characters take an action, a discovery or change affects a later decision, and the ending follows from those events.
+- A light everyday problem is enough. Do not force a dramatic conflict or a template-like twist.
+- Every meaningful turn should advance the event, a character's understanding, or a decision.
+- Show actions and consequences rather than only listing club information or repeating an advertisement.
+- Keep time and place changes clear. Introduce any new character naturally and keep participation consistent.
+
+Vocabulary in context:
+- Use all five supplied target words naturally and grammatically in dialogue.
+- Let actions, observations, reactions, or consequences help learners understand each word.
+- Do not make every target word merely introduce an activity.
+- Do not mechanically repeat textbook sentences or insert dictionary-style definitions.
+
+Source fidelity:
+- Preserve the passage's central theme and essential facts needed by the story.
+- Distinguish direct source facts, reasonable source-supported paraphrases, and creative story events.
+- Cite only the most specific source sentence IDs that support the factual content of a line.
+- Use an empty source_sentence_ids array for genuinely creative transitions or fictional events.
+- If a line mixes source fact and fiction, split or rewrite it so the evidence is clear.
+- Do not use an unrelated club's source sentence as evidence. Do not call an organization an official named organization unless the passage does so.
+- Do not invent concrete safety, scientific, or other factual claims and present them as textbook facts.
+- Do not turn the skit into a complete information list merely to include every textbook detail.
+
+Structure and duration:
+- Use the existing script JSON Schema exactly.
+- Use generation_method=direct for Direct and generation_method=plan_then_generate for Planned generation.
+- Use 2-3 characters and 1-3 scenes, subject to the passage constraints.
+- Cover exactly the five frozen target words from V0.3.
+- The formal estimated duration target is 60-90 seconds at 130 WPM (about 130-195 spoken dialogue words).
+- Prioritize approximately 150-170 English words in dialogue.text. This is a writing target, not a replacement for deterministic validation.
+- As a drafting aid, aim for about 12-16 meaningful dialogue turns. This is not a hard line-count limit.
+- Do not pad with greetings, repeated information, or long explanations. Do not count character names, scene labels, actions, or metadata as spoken words.
+- Before returning JSON, check that the spoken dialogue is long enough and that each turn advances the event, understanding, or decision. The deterministic checker remains authoritative.
+- Do not add audio paths, video paths, timestamps, or downstream-only fields.
+- Preserve dialogue array order.
+
+Output:
+- Return only one complete JSON script object. Do not return a plan, outline, critique, ranking, self-evaluation, or explanatory prose.

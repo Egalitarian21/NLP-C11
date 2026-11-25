@@ -1,0 +1,9 @@
+DIRECT GENERATION v2.2 - direct-generation-v2.2
+
+Generate one short English educational skit directly from the authoritative textbook passage.
+
+This is the Direct method. Do not create or output a separate vocabulary plan, fact plan, story-beat plan, outline, critique, ranking, self-evaluation, or explanatory prose. Organize the causal story internally, then return only the final JSON script.
+
+Apply the shared v2.2 story-driven writing requirements below exactly. The source passage, sentence IDs, frozen target words, learner profile, constraints, and schema are authoritative. Do not use any prior script, mock script, human rating, or other method's output as a reference.
+
+The only acceptable output is one complete JSON object compatible with the existing script schema. Set generation_method to "direct".
