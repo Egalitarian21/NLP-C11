@@ -1,0 +1,23 @@
+{
+  "config_version": "script-generation-v2.2",
+  "shared_story_requirements_version": "shared-story-requirements-v2.2",
+  "model": "deepseek-flash",
+  "thinking_mode": "disabled",
+  "temperature": 0,
+  "seed_requested": 42,
+  "seed_policy": "Record provider support; do not claim seed control when the provider ignores it.",
+  "response_format": {"type": "json_object"},
+  "duration_sec": {"min": 60, "max": 90, "is_estimate_until_tts": true, "estimator_wpm": 130},
+  "soft_word_range": {"min": 150, "max": 170},
+  "suggested_turn_range": {"min": 12, "max": 16, "is_soft": true},
+  "characters": {"preferred_min": 2, "preferred_max": 3},
+  "scenes": {"preferred_min": 1, "preferred_max": 3},
+  "target_word_count": 5,
+  "max_attempts_for_structural_retry": 2,
+  "script_schema_path": "schemas/script.schema.json",
+  "story_plan_schema_path": "schemas/source_grounded_story_plan_v2_2.schema.json",
+  "test_set_access_allowed": false,
+  "direct_prompt_version": "direct-generation-v2.2",
+  "planning_prompt_version": "source-grounded-story-planning-v2.2",
+  "planned_script_prompt_version": "planned-script-generation-v2.2"
+}

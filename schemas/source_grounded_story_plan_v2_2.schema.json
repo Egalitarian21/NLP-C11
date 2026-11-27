@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://c11.local/schemas/source_grounded_story_plan_v2_2.schema.json",
+  "title": "C11 Source-grounded Story Plan v2.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["plan_version", "passage_id", "target_words", "vocabulary_grounding", "source_claims", "story_beats"],
+  "properties": {
+    "plan_version": {"type": "string", "const": "2.2"},
+    "passage_id": {"type": "string", "pattern": "^p[0-9]{3}$"},
+    "target_words": {"type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true, "items": {"type": "string", "pattern": "^[A-Za-z]+$"}},
+    "vocabulary_grounding": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"$ref": "#/$defs/vocabulary_mapping"}},
+    "source_claims": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source_claim"}},
+    "story_beats": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/$defs/story_beat"}}
+  },
+  "$defs": {
+    "source_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^s[0-9]{3}$"}},
+    "vocabulary_mapping": {
+      "type": "object", "additionalProperties": false,
+      "required": ["word", "meaning_in_context", "source_sentence_ids", "suggested_dialogue_function", "suggested_story_use"],
+      "properties": {
+        "word": {"type": "string", "pattern": "^[A-Za-z]+$"},
+        "meaning_in_context": {"type": "string", "minLength": 1},
+        "source_sentence_ids": {"$ref": "#/$defs/source_ids"},
+        "suggested_dialogue_function": {"type": "string", "minLength": 1},
+        "suggested_story_use": {"type": "string", "minLength": 1}
+      }
+    },
+    "source_claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["claim_id", "factual_claim", "source_sentence_ids", "source_statement_type", "importance", "relationship_to_story"],
+      "properties": {
+        "claim_id": {"type": "string", "pattern": "^claim_[0-9]+$"},
+        "factual_claim": {"type": "string", "minLength": 1},
+        "source_sentence_ids": {"$ref": "#/$defs/source_ids"},
+        "source_statement_type": {"type": "string", "enum": ["fact", "question", "invitation", "opinion_or_promise"]},
+        "importance": {"type": "string", "enum": ["essential", "supporting"]},
+        "relationship_to_story": {"type": "string", "minLength": 1}
+      }
+    },
+    "story_beat": {
+      "type": "object", "additionalProperties": false,
+      "required": ["beat_id", "narrative_function", "character_goal", "trigger_or_obstacle", "character_action", "turning_point_or_change", "causal_outcome", "relevant_claim_ids", "target_words_to_integrate"],
+      "properties": {
+        "beat_id": {"type": "string", "pattern": "^beat_[1-4]$"},
+        "narrative_function": {"type": "string", "enum": ["setup_character_goal", "small_obstacle_or_curiosity", "development_turning_point", "resolution"]},
+        "character_goal": {"type": "string", "minLength": 1},
+        "trigger_or_obstacle": {"type": "string", "minLength": 1},
+        "character_action": {"type": "string", "minLength": 1},
+        "turning_point_or_change": {"type": "string", "minLength": 1},
+        "causal_outcome": {"type": "string", "minLength": 1},
+        "relevant_claim_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^claim_[0-9]+$"}},
+        "target_words_to_integrate": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[A-Za-z]+$"}}
+      }
+    }
+  }
+}

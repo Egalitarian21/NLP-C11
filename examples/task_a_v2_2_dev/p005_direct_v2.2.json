@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "passage_id": "p005",
+  "generation_method": "direct",
+  "title": "The Nature Club Discovery",
+  "language": "en",
+  "target_words": [
+    "join",
+    "club",
+    "nature",
+    "discover",
+    "collect"
+  ],
+  "characters": [
+    {
+      "id": "c1",
+      "name": "Lily"
+    },
+    {
+      "id": "c2",
+      "name": "Tom"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "location": "School hallway",
+      "dialogue": [
+        {
+          "line_id": "line_1",
+          "speaker_id": "c1",
+          "text": "Tom, do you love nature? I want to join a club about it.",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": [
+            "s014"
+          ]
+        },
+        {
+          "line_id": "line_2",
+          "speaker_id": "c2",
+          "text": "Yes, I do! There is a nature club. We go hiking every Sunday afternoon.",
+          "emotion": "happy",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s016"
+          ]
+        },
+        {
+          "line_id": "line_3",
+          "speaker_id": "c1",
+          "text": "That sounds fun. What do you do there?",
+          "emotion": "curious",
+          "action": "none",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_4",
+          "speaker_id": "c2",
+          "text": "We watch birds, take photos, and collect plants and insects.",
+          "emotion": "excited",
+          "action": "point",
+          "source_sentence_ids": [
+            "s017"
+          ]
+        },
+        {
+          "line_id": "line_5",
+          "speaker_id": "c1",
+          "text": "Collect? Like a hobby?",
+          "emotion": "curious",
+          "action": "none",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_6",
+          "speaker_id": "c2",
+          "text": "Yes, we collect leaves and small things to study them. It's great!",
+          "emotion": "happy",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s017"
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "location": "Nature park",
+      "dialogue": [
+        {
+          "line_id": "line_7",
+          "speaker_id": "c1",
+          "text": "Wow, this nature park is beautiful! I'm glad I joined the club.",
+          "emotion": "excited",
+          "action": "walk",
+          "source_sentence_ids": [
+            "s018"
+          ]
+        },
+        {
+          "line_id": "line_8",
+          "speaker_id": "c2",
+          "text": "Look! A bird over there. Let's take a photo.",
+          "emotion": "excited",
+          "action": "point",
+          "source_sentence_ids": [
+            "s017"
+          ]
+        },
+        {
+          "line_id": "line_9",
+          "speaker_id": "c1",
+          "text": "I see it! And look at these flowers. Can we collect some?",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": [
+            "s017"
+          ]
+        },
+        {
+          "line_id": "line_10",
+          "speaker_id": "c2",
+          "text": "Yes, but only a few. We want to discover more wildlife right under our noses!",
+          "emotion": "happy",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s019"
+          ]
+        },
+        {
+          "line_id": "line_11",
+          "speaker_id": "c1",
+          "text": "Discover? Like finding new things?",
+          "emotion": "curious",
+          "action": "none",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_12",
+          "speaker_id": "c2",
+          "text": "Exactly! Every time we go out, we discover something new. It's amazing.",
+          "emotion": "excited",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s019"
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "location": "School garden",
+      "dialogue": [
+        {
+          "line_id": "line_13",
+          "speaker_id": "c1",
+          "text": "Tom, I collected these leaves yesterday. Can we look at them in the club?",
+          "emotion": "happy",
+          "action": "none",
+          "source_sentence_ids": [
+            "s017"
+          ]
+        },
+        {
+          "line_id": "line_14",
+          "speaker_id": "c2",
+          "text": "Sure! The club meets every Sunday. You can bring your collection.",
+          "emotion": "happy",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s016"
+          ]
+        },
+        {
+          "line_id": "line_15",
+          "speaker_id": "c1",
+          "text": "I'm so glad I joined. I discover something new every week!",
+          "emotion": "excited",
+          "action": "none",
+          "source_sentence_ids": [
+            "s019"
+          ]
+        }
+      ]
+    }
+  ]
+}

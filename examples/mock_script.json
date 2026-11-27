@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "passage_id": "p005",
+  "generation_method": "direct",
+  "title": "School Club Advertisements",
+  "language": "en",
+  "target_words": [
+    "join",
+    "club",
+    "nature",
+    "discover",
+    "collect"
+  ],
+  "characters": [
+    {
+      "id": "c1",
+      "name": "Mia"
+    },
+    {
+      "id": "c2",
+      "name": "Leo"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "location": "School club fair",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "speaker_id": "c1",
+          "text": "Welcome to our school club fair! Join our Cooking Club.",
+          "emotion": "excited",
+          "action": "wave",
+          "source_sentence_ids": [
+            "s003"
+          ]
+        },
+        {
+          "line_id": "line_002",
+          "speaker_id": "c2",
+          "text": "What can we do in the Book Club?",
+          "emotion": "curious",
+          "action": "point",
+          "source_sentence_ids": [
+            "s009"
+          ]
+        },
+        {
+          "line_id": "line_003",
+          "speaker_id": "c1",
+          "text": "You can learn to cook Chinese food, including noodles and dumplings, with friendly classmates.",
+          "emotion": "happy",
+          "action": "point",
+          "source_sentence_ids": [
+            "s004",
+            "s005"
+          ]
+        },
+        {
+          "line_id": "line_004",
+          "speaker_id": "c2",
+          "text": "That sounds useful, but I also love the outdoors.",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_005",
+          "speaker_id": "c1",
+          "text": "Then discover nature with us. The Nature Club visits parks and walks together.",
+          "emotion": "excited",
+          "action": "point",
+          "source_sentence_ids": [
+            "s014",
+            "s016",
+            "s018"
+          ]
+        },
+        {
+          "line_id": "line_006",
+          "speaker_id": "c2",
+          "text": "Do you love nature? This club is for you.",
+          "emotion": "curious",
+          "action": "point",
+          "source_sentence_ids": [
+            "s014"
+          ]
+        },
+        {
+          "line_id": "line_007",
+          "speaker_id": "c1",
+          "text": "Of course. We collect plants and insects, watch birds, and take photos carefully.",
+          "emotion": "happy",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s015",
+            "s017"
+          ]
+        },
+        {
+          "line_id": "line_008",
+          "speaker_id": "c2",
+          "text": "I like that idea. I want to learn outside with my friends.",
+          "emotion": "excited",
+          "action": "nod",
+          "source_sentence_ids": []
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "location": "Nature park path",
+      "dialogue": [
+        {
+          "line_id": "line_009",
+          "speaker_id": "c1",
+          "text": "On Sunday afternoon, we can meet before the club walk.",
+          "emotion": "happy",
+          "action": "walk",
+          "source_sentence_ids": [
+            "s016"
+          ]
+        },
+        {
+          "line_id": "line_010",
+          "speaker_id": "c2",
+          "text": "Will we only look at plants?",
+          "emotion": "curious",
+          "action": "look_at",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_011",
+          "speaker_id": "c1",
+          "text": "No. We discover wildlife, watch birds, and talk quietly near the path.",
+          "emotion": "excited",
+          "action": "point",
+          "source_sentence_ids": [
+            "s017",
+            "s019"
+          ]
+        },
+        {
+          "line_id": "line_012",
+          "speaker_id": "c2",
+          "text": "We can collect leaves for observation, but we should respect living things.",
+          "emotion": "curious",
+          "action": "nod",
+          "source_sentence_ids": [
+            "s017"
+          ]
+        },
+        {
+          "line_id": "line_013",
+          "speaker_id": "c1",
+          "text": "Good point. The activity is about learning, not damaging nature.",
+          "emotion": "happy",
+          "action": "nod",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_014",
+          "speaker_id": "c2",
+          "text": "After the walk, maybe I can join the cooking club too.",
+          "emotion": "surprised",
+          "action": "point",
+          "source_sentence_ids": [
+            "s003"
+          ]
+        },
+        {
+          "line_id": "line_015",
+          "speaker_id": "c1",
+          "text": "You can join both clubs. Each club helps students share an interest.",
+          "emotion": "excited",
+          "action": "wave",
+          "source_sentence_ids": []
+        },
+        {
+          "line_id": "line_016",
+          "speaker_id": "c2",
+          "text": "Great! I will discover new interests with my friends.",
+          "emotion": "happy",
+          "action": "wave",
+          "source_sentence_ids": []
+        }
+      ]
+    }
+  ]
+}
